@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
 	let width = 0;
 	let height = 50;
-	let main;
+	let main: HTMLDivElement;
 	let transformX = 0;
 	let mouseX = 0;
 	let mouseY = 0;
@@ -11,10 +11,9 @@
 	onMount(() => {
 		width = window.innerHeight / 2;
 		transformX = (window.innerHeight / 2) * -1;
-		console.log(main);
 	});
 
-	function scrollMove(e) {
+	function scrollMove(e: Event) {
 		const x = main.getBoundingClientRect();
 		if (x.y <= window.innerHeight) {
 			const halfScreen = window.innerHeight / 2;
