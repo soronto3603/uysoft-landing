@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"matter-js": "^0.18.0"
+		"matter-js": "^0.18.0",
+		"three": "^0.149.0"
 	}
 }

@@ -45,7 +45,10 @@
 			/>
 		</svg>
 	</div>
-	<div class="text-white text-5xl transition-all duration-1000" class:opacity-25={!show}>
+	<div
+		class="text-white text-3xl pc:text-5xl transition-all duration-1000"
+		class:opacity-25={!show}
+	>
 		{item.title}
 	</div>
 	<div

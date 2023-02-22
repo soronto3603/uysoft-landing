@@ -4,6 +4,7 @@
 	import Section3 from './Section3.svelte';
 	import Section4 from './Section4.svelte';
 	import Section5 from './Section5.svelte';
+	import Section6 from './Section6.svelte';
 </script>
 
 <div class="wrapper">
@@ -11,7 +12,7 @@
 	<Section2 />
 	<Section3 />
 	<Section4 />
-	<Section5 />
+	<Section6 />
 </div>
 
 <style lang="postcss" scoped>

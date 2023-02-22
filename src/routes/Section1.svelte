@@ -13,10 +13,10 @@
 		<DelayOnMount delay={1000} duration={1000}>
 			<div class="w-full flex justify-center items-center">
 				<div class="flex justify-center items-center">
-					<div class="absolute w-96 h-96 bg-effect p-8 rounded-full blur-3xl z-0" />
+					<div class="absolute pc:w-96 pc:h-96 bg-effect p-8 rounded-full blur-3xl z-0" />
 					<div
 						style:background-image={`url(${profileBlurFrame})`}
-						class="w-96 h-96 p-2 bg-contain flex justify-center items-center z-10"
+						class="w-52 h-52 pc:w-96 pc:h-96 p-2 bg-contain flex justify-center items-center z-10"
 					>
 						<img class="w-full" src={profile} alt="profile" />
 					</div>
@@ -28,9 +28,8 @@
 	<ScrollOnMount>
 		<DelayOnMount delay={1500} duration={1000}>
 			<div
-				style:font-size="90px"
 				in:fly={{ delay: 1000, duration: 1000 }}
-				class="w-full flex justify-center items-center text-white font-black mt-12"
+				class="w-full text-5xl pc:text-8xl flex justify-center items-center text-white font-black mt-12"
 			>
 				WALEED SHABIR
 			</div>
@@ -39,7 +38,7 @@
 
 	<ScrollOnMount>
 		<DelayOnMount delay={1800} duration={1000}>
-			<div style:font-size="36px" class="text-gray-500 w-full flex justify-center items-center">
+			<div class="text-gray-500 text-2xl pc:text-4xl w-full flex justify-center items-center">
 				A UNIVERSAL PRODUCT DESIGNER
 			</div>
 		</DelayOnMount>

@@ -114,7 +114,7 @@
 		</div>
 	{/each}
 	<div
-		class="fixed z-0"
+		class="fixed z-10"
 		style:left={`${width / 2}px`}
 		style:top={`${height / 2}px`}
 		style:opacity={visible ? 1 : 0}
@@ -124,8 +124,10 @@
 			style:width="600px"
 			style:height="600px"
 		>
-			<div class="text-6xl text-white px-16"><span class="text-pink">1k+</span> Happy Clients</div>
-			<div class="px-16 text-gray-400 text-center mt-8">
+			<div class="text-2xl pc:text-6xl text-white px-16">
+				<span class="text-pink">1k+</span> Happy Clients
+			</div>
+			<div class="px-16 text-sm pc:text-base text-gray-400 text-center mt-8">
 				G sdhsuhLorem Ipsum is simply dummy text of the sdssdh printing and typesetting industry.
 				Loremas sdcsn Ipsum has been the industry's standardas sdsdcssdjdummy text ever since the
 				1500DGs.

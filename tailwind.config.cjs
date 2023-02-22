@@ -2,6 +2,9 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		screens: {
+			pc: '800px'
+		},
 		extend: {
 			colors: {
 				bg: '#101010',

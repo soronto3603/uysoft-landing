@@ -6,9 +6,11 @@
 	import CircleCheck from '$/lib/icons/circle-check.svelte';
 	import ScrollActivableText from '$/lib/Section2/ScrollActivableText.svelte';
 
-	const texts = [...new Array(5).keys()];
+	const texts = [...new Array(10).keys()];
 	let progress = 0;
+	let width = 0;
 	let height = 0;
+	let isMobile: boolean;
 
 	const items = [
 		{
@@ -46,6 +48,8 @@
 	];
 
 	onMount(() => {
+		width = window.innerWidth;
+		isMobile = width >= 420 ? true : false;
 		height = window.innerHeight;
 		let frame = requestAnimationFrame(loop);
 		function loop() {
@@ -91,8 +95,12 @@
 	<div class="flex flex-col items-center">
 		<div class="absolute left-0 top-0">
 			{#each texts as i}
-				<div class="h-screen p-20" style:transform={`translateY(-${progress * height}px)`}>
-					<img class="h-full" src={textContent} alt="text" />
+				<div
+					class="pc:p-20"
+					style:transform={`translateY(-${progress * height}px)`}
+					style={isMobile ? 'height: 100vh' : 'height: 50vh'}
+				>
+					<img style={isMobile ? 'height: 100%' : 'height: 380px'} src={textContent} alt="text" />
 				</div>
 			{/each}
 		</div>
