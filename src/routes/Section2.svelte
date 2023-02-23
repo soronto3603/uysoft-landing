@@ -98,7 +98,7 @@
 				<div
 					class="pc:p-20"
 					style:transform={`translateY(-${progress * height}px)`}
-					style={isMobile ? 'height: 100vh' : 'height: 50vh'}
+					style:height={isMobile ? '100vh' : ' 50vh'}
 				>
 					<img style={isMobile ? 'height: 100%' : 'height: 380px'} src={textContent} alt="text" />
 				</div>
